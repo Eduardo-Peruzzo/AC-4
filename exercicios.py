@@ -61,7 +61,7 @@ def main():
         ap1, ap2, ac, asub = le_notas()
         if valida_notas(ap1, ap2, ac, asub):
             nota1, nota2 = sub_notas(ap1, ap2, asub)
-            media = calcula_media(nota1, nota2, ac)
+            media = round(calcula_media(nota1, nota2, ac), 2)
             aprovacao(media, nome)
 
 
