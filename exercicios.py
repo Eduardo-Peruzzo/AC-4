@@ -39,11 +39,11 @@ def valida_notas(ap1, ap2, ac, asub):
     return True
 
 def sub_notas(ap1, ap2, asub):
-    if ap1 < ap2:
-        return ap2, asub
-    if ap2 < ap1:
+    if asub > ap2:
         return ap1, asub
-    return ap1, asub
+    if asub > ap1:
+        return ap2, asub
+    return ap1, ap2
 
 def calcula_media(nota1, nota2, ac):
     media = ((nota1 + nota2) * 0.4) + (ac * 0.2)
