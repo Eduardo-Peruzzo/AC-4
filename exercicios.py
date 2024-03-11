@@ -44,7 +44,7 @@ def sub_notas(ap1, ap2, asub):
     if ap2 > ap1 and asub > ap1:
         return ap2, asub
     return ap1, ap2
-# asub = 6 ap1 = 7 ap2 = 5
+
 def calcula_media(nota1, nota2, ac):
     media = ((nota1 + nota2) * 0.4) + (ac * 0.2)
     return media
