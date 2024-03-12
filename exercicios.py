@@ -55,7 +55,7 @@ def aprovacao(media, nome):
     if media >= 7:
         return print(nome, "sua média foi", media, ", você foi aprovado!")
     if media < 7:
-        return print(nome, "sua média foi", media , ", você foi reprovado!")
+        return print(nome, "sua média foi", media, ", você foi reprovado!")
 
 def main():
     nome = pergunta_nome()
